@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
 	"text/template"
 )
@@ -31,6 +32,8 @@ func main() {
 		tmpl.ExecuteTemplate(w, "products.html", nil)
 	})
 
+	fmt.Println("Server is running on port 8050")
+
 	// start server
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":8050", nil)
 }

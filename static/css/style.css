@@ -2306,6 +2306,7 @@ contact
   font-weight: 400;
   font-size: 14px;
   color: #606060;
+  height: 256px;
 }
 .contact .contact-item .icon {
   width: 46px;
@@ -2313,7 +2314,7 @@ contact
   left: 0px;
   right: 0px;
   margin: auto;
-  background: #F5F5F5;
+  background: #f5f5f5;
   color: #1F2128;
   margin-bottom: 20px;
 }
@@ -2418,7 +2419,8 @@ contact
   font-size: 14px !important;
   letter-spacing: 0.7px;
 }
-.contact-bottom .contact-form input, .contact-bottom .contact-form textarea {
+.contact-bottom .contact-form input,
+.contact-bottom .contact-form textarea {
   border: 1px solid #eee;
   width: 100%;
   height: 50px;
@@ -2433,10 +2435,11 @@ contact
   -moz-appearance: none;
   appearance: none;
   margin-bottom: 30px;
-  color: #9BADBD;
+  color: #9badbd;
   font-size: 14px;
 }
-.contact-bottom .contact-form input:focus, .contact-bottom .contact-form textarea:focus {
+.contact-bottom .contact-form input:focus,
+.contact-bottom .contact-form textarea:focus {
   border: 1px solid #1F2128;
   padding-left: 30px;
 }
@@ -2449,6 +2452,11 @@ contact
   background: #f5f5f5;
 }
 
+@media (max-width: 576px) {
+  .contact-item {
+    height: auto !important;
+  }
+}
 @media (max-width: 991px) {
   .contact {
     overflow: initial !important;
