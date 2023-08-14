@@ -35,5 +35,5 @@ func main() {
 	fmt.Println("Server is running on port 8050")
 
 	// start server
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":8050", nil)
 }
